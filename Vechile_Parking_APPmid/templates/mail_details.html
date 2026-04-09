@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Monthly Parking Activity Report</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            color: #333;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .header {
+            background: #1abc9c;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .content {
+            margin-top: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th,
+        td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background: #f4f6f6;
+        }
+
+        .summary {
+            margin-top: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h2>Monthly Parking Activity Report</h2>
+        </div>
+        <div class="content">
+            <p>Dear {{ data.username }},</p>
+            <p>Here is your parking activity report for the month:</p>
+            <div class="summary">
+                <p>Total Bookings: {{ data.total_bookings }}</p>
+                <p>Most Used Parking Lot: {{ data.most_used_lot }}</p>
+                <p>Total Amount Spent: ₹{{ data.total_cost }}</p>
+            </div>
+            <table>
+                <tr>
+                    <th>Parking Lot</th>
+                    <th>Spot</th>
+                    <th>Status</th>
+                    <th>Parking Time</th>
+                    <th>Leaving Time</th>
+                    <th>Cost (₹)</th>
+                </tr>
+                {% for res in data.reservations %}
+                <tr>
+                    <td>{{ res.lot_name }}</td>
+                    <td>{{ res.spot_name }}</td>
+                    <td>{{ res.status }}</td>
+                    <td>{{ res.parking_timestamp }}</td>
+                    <td>{{ res.leaving_timestamp }}</td>
+                    <td>{{ res.parking_cost }}</td>
+                </tr>
+                {% endfor %}
+            </table>
+            <p>Thank you for using our parking service!</p>
+        </div>
+    </div>
+</body>
+
+</html>

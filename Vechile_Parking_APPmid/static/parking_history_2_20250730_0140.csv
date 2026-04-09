@@ -1,0 +1,6 @@
+Reservation ID,Parking Lot,Spot Name,Parking Timestamp,Leaving Timestamp,Cost,Status,Remarks
+1,N/A,N/A,2025-07-29 07:56,2025-07-29 08:06,50.0,Paid,N/A
+2,N/A,N/A,2025-07-29 08:20,2025-07-29 08:21,50.0,Paid,N/A
+3,N/A,N/A,2025-07-29 08:21,2025-07-29 08:21,60.0,Paid,N/A
+4,chennai,chennai_Spot1,2025-07-29 15:37,N/A,60.0,Parked,N/A
+5,chennai,chennai_Spot2,2025-07-29 15:43,N/A,60.0,Parked,N/A

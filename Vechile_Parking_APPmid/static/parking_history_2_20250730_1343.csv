@@ -1,0 +1,10 @@
+Reservation ID,Parking Lot,Spot Name,Parking Timestamp,Leaving Timestamp,Cost,Status,Remarks
+1,N/A,N/A,2025-07-29 07:56,2025-07-29 08:06,50.0,Paid,N/A
+2,N/A,N/A,2025-07-29 08:20,2025-07-29 08:21,50.0,Paid,N/A
+3,N/A,N/A,2025-07-29 08:21,2025-07-29 08:21,60.0,Paid,N/A
+4,chennai,chennai_Spot1,2025-07-29 15:37,2025-07-29 20:57,320.11,Paid,N/A
+5,chennai,chennai_Spot2,2025-07-29 15:43,2025-07-29 20:57,313.68,Paid,N/A
+6,chennai,chennai_Spot3,2025-07-29 20:13,2025-07-30 08:12,718.33,Leaving,N/A
+7,chennai,chennai_Spot1,2025-07-30 08:07,N/A,60.0,Parked,N/A
+8,hyderabad,hyderabad_Spot1,2025-07-30 08:11,N/A,60.0,Parked,N/A
+9,hyderabad,hyderabad_Spot2,2025-07-30 08:11,N/A,60.0,Booked,N/A
